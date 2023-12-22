@@ -1,4 +1,11 @@
 package com.mobile.mp3_final.api
 
-class DigimonResponse {
-}
+data class Response(
+    val response: List<ResponseItem>
+)
+
+data class ResponseItem(
+    val img: String,
+    val level: String,
+    val name: String
+)
